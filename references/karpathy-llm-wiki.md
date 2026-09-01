@@ -1,8 +1,19 @@
+---
+type: Reference
+title: "LLM Wiki (gist)"
+description: Karpathy's originating statement of the LLM-wiki pattern — an idea file meant to be handed to an agent and instantiated.
+tags: [source, knowledge-management, pattern]
+resource: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+author: human:karpathy
+fidelity: verbatim
+retrieved: 2026-09-01T19:01:57Z
+generated: { by: claude-code/opus-5, at: 2026-09-01T19:01:57Z }
+status: stable
+---
+
 <!--
-Retrieved: 2026-09-01T19:01:57Z
-Source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-Author: Andrej Karpathy
-Fidelity: verbatim copy of the gist as published.
+Verbatim copy of the gist as published. The canonical URL in `resource` is
+authoritative.
 -->
 
 # LLM Wiki

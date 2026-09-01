@@ -22,10 +22,10 @@ are reserved (OKF §3.1) — never write a concept with either name.
 
 ## What publishes
 
-The mirror to `ismailkhan.xyz/notes/` carries the concept pages and
-`index.md` only. `log.md`, `references/`, this file, and `README.md` are
-excluded at every level — including any per-subdirectory `log.md` or
-`references/` a future category split creates.
+The mirror to `ismailkhan.xyz/notes/` carries the concept pages, `index.md`,
+and `log.md`. `references/`, this file, and `README.md` are excluded at every
+level — including any per-subdirectory `references/` a future category split
+creates.
 
 So a bundle-relative link to any of those resolves in this repo but 404s on
 the site. When `index.md` (or any concept page) needs to point at an
@@ -65,6 +65,22 @@ status: stable                     # draft | stable | deprecated
 `type` is the only required field, but always fill in `title`,
 `description`, and `generated` — they're what make `index.md` and search
 useful.
+
+**Every non-reserved `.md` file in the bundle carries this block — files under
+`references/` included.** OKF §11.1 requires parseable YAML frontmatter with a
+non-empty `type` on every file that isn't `index.md` or `log.md`; a source
+saved with only an HTML comment header is a conformance failure. When adding a
+file to `references/`, give it `type: Reference` plus:
+
+```yaml
+resource: <canonical URL the copy came from>
+author: <actor, per §7>
+fidelity: verbatim | transcription | excerpt
+retrieved: <ISO 8601 datetime>
+```
+
+`fidelity` is load-bearing: anything but `verbatim` means the canonical
+`resource` wins over the local copy, and a later reader needs to know that.
 
 **Type values** aren't centrally registered (OKF §4.1) — pick what fits.
 Common ones here: `Overview`, `Concept`, `Model`, `Technique`, `Paper`,
@@ -136,6 +152,12 @@ the concept's frontmatter), grouped under headings. No frontmatter except
 the root's optional `okf_version` key (OKF §8, §12).
 
 ## log.md
+
+`log.md` is published to the site, so it carries frontmatter (`type: Log`,
+`title`, `description`, `generated`) to render with a real title. This is
+allowed: OKF §8 forbids frontmatter on `index.md` — the bundle root's optional
+`okf_version` is the sole exception — but §9 sets no equivalent rule for
+`log.md`.
 
 Root and any subdirectory `log.md` is a flat, chronological,
 newest-first log per OKF §9:

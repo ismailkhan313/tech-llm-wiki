@@ -1,11 +1,22 @@
+---
+type: Reference
+title: "Introducing the Open Knowledge Format"
+description: Google Cloud's announcement of OKF, describing v0.1 of the format and its reference implementations.
+tags: [source, okf, standards, google-cloud]
+resource: https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing
+author: team:google-cloud
+fidelity: transcription
+retrieved: 2026-09-01T19:01:57Z
+generated: { by: claude-code/opus-5, at: 2026-09-01T19:01:57Z }
+status: stable
+---
+
 <!--
-Retrieved: 2026-09-01T19:01:57Z
-Source: https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing
-Authors: Sam McVeety (Tech Lead, Data Analytics); Amir Hormati (Tech Lead, BigQuery, Engineering, Data Cloud)
-Published: 2026-06-12
-Fidelity: NOT VERBATIM. Agent transcription of the rendered page, section
-structure and code blocks preserved, prose condensed in places. Treat the
-canonical URL above as authoritative for exact wording and quotation.
+NOT VERBATIM. Agent transcription of the rendered page: section structure and
+code blocks preserved, prose condensed in places. The canonical URL in
+`resource` is authoritative for exact wording and quotation.
+Authors: Sam McVeety (Tech Lead, Data Analytics); Amir Hormati (Tech Lead,
+BigQuery, Engineering, Data Cloud). Published 2026-06-12.
 -->
 
 # Introducing the Open Knowledge Format
