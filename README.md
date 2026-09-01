@@ -16,6 +16,10 @@ Two ideas this repo combines:
 See [CLAUDE.md](CLAUDE.md) for the concrete conventions (frontmatter
 fields, ingest/query/lint workflows, index and log formats).
 
+This repo is mirrored, roughly every 30 minutes, to the `/notes/` section of
+[ismailkhan.xyz](https://www.ismailkhan.xyz/notes/) — see that repo's
+`.github/workflows/sync-wiki.yaml`. Edit here; the site follows.
+
 ## Structure
 
 ```
