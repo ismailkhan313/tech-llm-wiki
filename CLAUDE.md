@@ -20,6 +20,19 @@ conventions on top of them.
 This repo *is* the OKF bundle root. `index.md` and `log.md` at the root
 are reserved (OKF §3.1) — never write a concept with either name.
 
+## What publishes
+
+The mirror to `ismailkhan.xyz/notes/` carries the concept pages and
+`index.md` only. `log.md`, `references/`, this file, and `README.md` are
+excluded at every level — including any per-subdirectory `log.md` or
+`references/` a future category split creates.
+
+So a bundle-relative link to any of those resolves in this repo but 404s on
+the site. When `index.md` (or any concept page) needs to point at an
+excluded file, link its absolute GitHub URL under
+`https://github.com/ismailkhan313/tech-llm-wiki` instead of a relative path. Links between
+concept pages stay bundle-relative as described below.
+
 ## Directory structure
 
 Flat for now. Don't pre-create category folders (`models/`, `papers/`,
