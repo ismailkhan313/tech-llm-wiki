@@ -32,8 +32,11 @@ tech-llm-wiki/
 ├── log.md           # chronological history of what changed and when
 ├── references/      # raw sources, immutable
 │   └── index.md
-├── Diagrams/        # Excalidraw sources + their exported PNGs
-│   └── <concept>.excalidraw, <concept>.png
+├── Diagrams/        # Excalidraw sources only (.excalidraw), nothing else
+│   ├── index.md
+│   └── <concept>.excalidraw
+├── _attachments/    # every image (PNG, JPG, SVG, ...), including diagram exports
+│   └── <concept>.png
 └── <concept>.md      # wiki pages, added as sources get ingested
 ```
 

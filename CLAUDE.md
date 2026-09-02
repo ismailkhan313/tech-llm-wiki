@@ -42,23 +42,30 @@ only split a category out once there are enough concepts in it to justify
 a subdirectory with its own `index.md`. When you do split one out, update
 links and the root `index.md` in the same pass.
 
-**`Diagrams/` is the one standing exception.** Every diagram's `.excalidraw`
-source and its exported `.png` live there together, named to match the
-concept page they illustrate (`Diagrams/llm-wiki-pattern.excalidraw` +
-`Diagrams/llm-wiki-pattern.png` for `llm-wiki-pattern.md`). It exists
-upfront, unlike concept categories, because the site's Explorer sidebar
-groups files by directory: keeping every diagram in one folder means the
-sidebar shows a single collapsible "Diagrams" entry instead of one flat
-item per drawing next to the concept pages.
+**`Diagrams/` and `_attachments/` are the two standing exceptions.** They
+exist upfront, unlike concept categories, because the site's Explorer
+sidebar groups files by directory: keeping every diagram (and every image)
+in one place each means the sidebar shows a single collapsible entry
+instead of one flat item per file next to the concept pages.
 
-In the concept page, embed the plain PNG, then follow it with a
-`[!diagram]` callout linking to the `.excalidraw` file — never a bare
-prose link. The site defines this callout type (`quartz/styles/callouts.scss`
-in `ismailkhan.xyz`) with its own icon and color; omit the title so it
-falls back to "Diagram", and keep the body to one short line:
+- **`Diagrams/` holds `.excalidraw` sources only** — nothing else, not even
+  that diagram's own exported image. It has its own `index.md` (no
+  frontmatter, per the subdirectory convention below) cataloguing each
+  source and the concept page it belongs to; update it whenever a diagram
+  is added or removed.
+- **`_attachments/` holds every image** — PNG, JPG, SVG, whatever —
+  including diagram exports, named to match the concept page they
+  illustrate (`_attachments/llm-wiki-pattern.png` for `llm-wiki-pattern.md`).
+
+In the concept page, embed the plain PNG from `_attachments/`, then follow
+it with a `[!diagram]` callout linking to the `.excalidraw` file in
+`Diagrams/` — never a bare prose link. The site defines this callout type
+(`quartz/styles/callouts.scss` in `ismailkhan.xyz`) with its own icon and
+color; omit the title so it falls back to "Diagram", and keep the body to
+one short line:
 
 ```markdown
-![alt text](Diagrams/<concept>.png)
+![alt text](_attachments/<concept>.png)
 
 > [!diagram]
 > Open the interactive version [here](/Diagrams/<concept>.excalidraw) to pan and zoom.
