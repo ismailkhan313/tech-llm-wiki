@@ -22,10 +22,11 @@ are reserved (OKF §3.1) — never write a concept with either name.
 
 ## What publishes
 
-The mirror to `ismailkhan.xyz/notes/` carries the concept pages, `index.md`,
-and `log.md`. `references/`, this file, and `README.md` are excluded at every
-level — including any per-subdirectory `references/` a future category split
-creates.
+The mirror to `ismailkhan.xyz/wiki/` carries the concept pages and `index.md`.
+`references/`, this file, and `README.md` are excluded at every level —
+including any per-subdirectory `references/` a future category split
+creates. `log.md` is excluded from that mirror too, but republished
+separately as `ismailkhan.xyz/log` (see the site's `sync-wiki.yaml`).
 
 So a bundle-relative link to any of those resolves in this repo but 404s on
 the site. When `index.md` (or any concept page) needs to point at an
