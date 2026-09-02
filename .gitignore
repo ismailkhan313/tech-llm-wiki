@@ -1,1 +1,5 @@
 .DS_Store
+
+# excalidraw-diagram skill renderer (local Python env)
+.claude/skills/excalidraw-diagram/references/.venv/
+.claude/skills/excalidraw-diagram/references/__pycache__/
