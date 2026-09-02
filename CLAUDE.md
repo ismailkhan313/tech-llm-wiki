@@ -42,6 +42,22 @@ only split a category out once there are enough concepts in it to justify
 a subdirectory with its own `index.md`. When you do split one out, update
 links and the root `index.md` in the same pass.
 
+**`Diagrams/` is the one standing exception.** Every diagram's `.excalidraw`
+source and its exported `.png` live there together, named to match the
+concept page they illustrate (`Diagrams/llm-wiki-pattern.excalidraw` +
+`Diagrams/llm-wiki-pattern.png` for `llm-wiki-pattern.md`). It exists
+upfront, unlike concept categories, because the site's Explorer sidebar
+groups files by directory: keeping every diagram in one folder means the
+sidebar shows a single collapsible "Diagrams" entry instead of one flat
+item per drawing next to the concept pages.
+
+In the concept page, embed the PNG wrapped in a link to the `.excalidraw`
+file so the image itself opens the interactive, pan-and-zoom version:
+
+```markdown
+[![alt text](Diagrams/<concept>.png)](/Diagrams/<concept>.excalidraw)
+```
+
 ## Concept frontmatter
 
 Follow OKF §4-§5, using only the core fields — no Attested Computation
