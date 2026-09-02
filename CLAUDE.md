@@ -51,11 +51,17 @@ groups files by directory: keeping every diagram in one folder means the
 sidebar shows a single collapsible "Diagrams" entry instead of one flat
 item per drawing next to the concept pages.
 
-In the concept page, embed the PNG wrapped in a link to the `.excalidraw`
-file so the image itself opens the interactive, pan-and-zoom version:
+In the concept page, embed the plain PNG, then follow it with a
+`[!diagram]` callout linking to the `.excalidraw` file — never a bare
+prose link. The site defines this callout type (`quartz/styles/callouts.scss`
+in `ismailkhan.xyz`) with its own icon and color; omit the title so it
+falls back to "Diagram", and keep the body to one short line:
 
 ```markdown
-[![alt text](Diagrams/<concept>.png)](/Diagrams/<concept>.excalidraw)
+![alt text](Diagrams/<concept>.png)
+
+> [!diagram]
+> Open the interactive version [here](/Diagrams/<concept>.excalidraw) to pan and zoom.
 ```
 
 ## Concept frontmatter
