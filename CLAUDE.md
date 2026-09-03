@@ -96,6 +96,13 @@ status: stable                     # draft | stable | deprecated
 `description`, and `generated` — they're what make `index.md` and search
 useful.
 
+**Never open the body with an H1 repeating `title`.** The site's
+`article-title` component (`quartz.config.yaml`, `beforeBody`) already
+renders frontmatter `title` as the page's H1, above the properties box. A
+markdown body that also starts with `# <Title>` renders twice — the
+component's H1, then the same text again as a heading in the body. Start
+body content directly with prose or a `##` section instead.
+
 **Every non-reserved `.md` file in the bundle carries this block — files under
 `references/` included.** OKF §11.1 requires parseable YAML frontmatter with a
 non-empty `type` on every file that isn't `index.md` or `log.md`; a source
@@ -187,14 +194,13 @@ the root's optional `okf_version` key (OKF §8, §12).
 `title`, `description`, `generated`) to render with a real title. This is
 allowed: OKF §8 forbids frontmatter on `index.md` — the bundle root's optional
 `okf_version` is the sole exception — but §9 sets no equivalent rule for
-`log.md`.
+`log.md`. Same rule as any other page: no leading H1 repeating `title` — the
+site's `article-title` component already renders it.
 
 Root and any subdirectory `log.md` is a flat, chronological,
 newest-first log per OKF §9:
 
 ```markdown
-# Wiki Update Log
-
 ## 2026-09-01
 * **Ingest**: Added [some-source](/some-concept.md), updated [related concept](/related-concept.md).
 ```
