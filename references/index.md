@@ -15,3 +15,12 @@ for anything not verbatim, the canonical URL in the file header wins.
   McVeety & Amir Hormati, "Introducing the Open Knowledge Format," Google
   Cloud blog, 2026-06-12. Describes OKF v0.1. *Agent transcription, not
   verbatim.*
+- [google-cloud-agentic-design-patterns.md](google-cloud-agentic-design-patterns.md) —
+  Samantha He, "Choose a design pattern for your agentic AI system," Google
+  Cloud Architecture Center, last reviewed 2026-05-28. The twelve agent
+  design patterns and the framework for choosing between them. *Verbatim
+  prose; site chrome dropped, diagrams referenced by URL.*
+- [genai-leader-module-1-slides.md](genai-leader-module-1-slides.md) through
+  [module-5](genai-leader-module-5-slides.md) — Google Cloud Skills Boost,
+  "Generative AI Leader (ILT)" course slide decks. *Agent transcription of
+  the official PDFs.*

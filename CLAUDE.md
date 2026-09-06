@@ -120,8 +120,9 @@ retrieved: <ISO 8601 datetime>
 `resource` wins over the local copy, and a later reader needs to know that.
 
 **Type values** aren't centrally registered (OKF §4.1) — pick what fits.
-Common ones here: `Overview`, `Concept`, `Model`, `Technique`, `Paper`,
-`Person`, `Organization`, `Benchmark`, `Comparison`, `Synthesis`.
+Common ones here: `Overview`, `Concept`, `Model`, `Technique`, `Pattern`,
+`Paper`, `Person`, `Organization`, `Benchmark`, `Comparison`, `Synthesis`,
+`Study Guide`.
 
 **Actor convention** (OKF §7):
 - You, confirming something yourself: `human:ismailkhan`

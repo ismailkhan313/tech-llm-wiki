@@ -124,10 +124,4 @@ status: draft
 
 **Plan for change:** regularly review/refine strategy, stay informed, engage the gen AI community, invest in training, attract/retain top talent.
 
-[^module1-slides]: [Module 1 slide deck (Generative AI Leader course)](references/genai-leader-module-1-slides.md)
-[^module2-slides]: [Module 2 slide deck (Generative AI Leader course)](references/genai-leader-module-2-slides.md)
-[^module3-slides]: [Module 3 slide deck (Generative AI Leader course)](references/genai-leader-module-3-slides.md)
-[^module4-slides]: [Module 4 slide deck (Generative AI Leader course)](references/genai-leader-module-4-slides.md)
-[^module5-slides]: [Module 5 slide deck (Generative AI Leader course)](references/genai-leader-module-5-slides.md)
-
 [^module5-slides]: [Module 5 slide deck (Generative AI Leader course)](https://github.com/ismailkhan313/tech-llm-wiki/blob/main/references/genai-leader-module-5-slides.md)
