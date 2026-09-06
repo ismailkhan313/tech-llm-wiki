@@ -20,6 +20,10 @@ for anything not verbatim, the canonical URL in the file header wins.
   Cloud Architecture Center, last reviewed 2026-05-28. The twelve agent
   design patterns and the framework for choosing between them. *Verbatim
   prose; site chrome dropped, diagrams referenced by URL.*
+- [a2a-protocol-what-is-a2a.md](a2a-protocol-what-is-a2a.md) — "What is A2A?",
+  the A2A protocol's own introduction, retrieved 2026-09-06. The problems it
+  solves, its benefits and design principles, its relationship to MCP and ADK,
+  and the request lifecycle. *Verbatim; image and intra-docs links absolutized.*
 - [genai-leader-module-1-slides.md](genai-leader-module-1-slides.md) through
   [module-5](genai-leader-module-5-slides.md) — Google Cloud Skills Boost,
   "Generative AI Leader (ILT)" course slide decks. *Agent transcription of

@@ -121,8 +121,8 @@ retrieved: <ISO 8601 datetime>
 
 **Type values** aren't centrally registered (OKF §4.1) — pick what fits.
 Common ones here: `Overview`, `Concept`, `Model`, `Technique`, `Pattern`,
-`Paper`, `Person`, `Organization`, `Benchmark`, `Comparison`, `Synthesis`,
-`Study Guide`.
+`Protocol`, `Paper`, `Person`, `Organization`, `Benchmark`, `Comparison`,
+`Synthesis`, `Study Guide`.
 
 **Actor convention** (OKF §7):
 - You, confirming something yourself: `human:ismailkhan`
