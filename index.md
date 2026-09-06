@@ -31,8 +31,11 @@ written in.
 Study notes for certification exams — bullet-point summaries of official
 course material, not general concept pages.
 
-- [Google Cloud GAIL Certification](/google-GAIL.md) — consolidated study
-  notes: overview, exam format, and all five course modules in one page.
+- [GAIL Module 1: Beyond the Chatbot](/google-GAIL/module-1-beyond-the-chatbot.md) — generative AI fundamentals — what gen AI is, foundation models, prompting, Google's gen AI ecosystem, and augmentation vs. automation.
+- [GAIL Module 2: Unlock Foundational Concepts](/google-GAIL/module-2-foundational-concepts.md) — core AI/ML/DL definitions, data quality and types, ML lifecycle, foundation model limitations, secure and responsible AI, and legal implications.
+- [GAIL Module 3: Navigate the Landscape](/google-GAIL/module-3-navigate-the-landscape.md) — the five-layer gen AI stack (Applications, Agents, Platform, Models, Infrastructure), agent categories, Google Cloud's MLOps tooling, cost, and solution selection.
+- [GAIL Module 4: Gen AI Apps — Transform Your Work](/google-GAIL/module-4-genai-apps.md) — prompting techniques (zero/one/few-shot, role prompting, RAG), Google Workspace with Gemini, Gemini surfaces (Advanced, Gems, Notebook), and Gemini for Google Cloud.
+- [GAIL Module 5: Gen AI Agents — Transform Your Organization](/google-GAIL/module-5-genai-agents.md) — agent architecture (foundation model, tools, reasoning loop), CoT/ReAct, RAG, Google Cloud agent tooling, and planning org-wide gen AI transformation.
 
 ## Meta
 
