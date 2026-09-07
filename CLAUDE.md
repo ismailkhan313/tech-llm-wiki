@@ -192,6 +192,45 @@ When asked to health-check the wiki, look for:
 - Missing cross-references between clearly related pages.
 - Gaps worth filling with a targeted web search.
 
+### Publish
+
+Committing isn't the end of a change — the site is only current once the
+mirror is. `sync-wiki.yaml` in `ismailkhan.xyz` runs the same mirror on a
+30-minute schedule, so this is about not waiting for it, and the local copy
+must match what that workflow would produce or the next scheduled run will
+churn. **Same exclusion list, always** — if one changes, change both.
+
+After committing here, run all three steps:
+
+```bash
+# 1. push the wiki
+git -C ~/Codebase/tech-llm-wiki push
+
+# 2. mirror into the site's content/Wiki, minus what doesn't publish
+rsync -a --delete \
+  --exclude='.git' --exclude='.gitignore' --exclude='.claude' \
+  --exclude='CLAUDE.md' --exclude='README.md' --exclude='references' \
+  --exclude='log.md' \
+  ~/Codebase/tech-llm-wiki/ ~/Codebase/ismailkhan.xyz/content/Wiki/
+
+#    log.md publishes separately at /log, retitled "Wiki Log"
+awk '
+  NR == 1 && $0 == "---" { in_fm = 1; print; next }
+  in_fm && /^---[[:space:]]*$/ { in_fm = 0; print; next }
+  in_fm && /^title:/ { print "title: Wiki Log"; next }
+  !in_fm && !h1 && /^# / { print "# Wiki Log"; h1 = 1; next }
+  { print }
+' ~/Codebase/tech-llm-wiki/log.md > ~/Codebase/ismailkhan.xyz/content/log.md
+
+# 3. commit and push the site — deploy.yaml runs on push to main
+git -C ~/Codebase/ismailkhan.xyz add content/Wiki content/log.md
+git -C ~/Codebase/ismailkhan.xyz commit -m "Sync notes from tech-llm-wiki@$(git -C ~/Codebase/tech-llm-wiki rev-parse --short HEAD)"
+git -C ~/Codebase/ismailkhan.xyz push
+```
+
+Pull the site repo first if the scheduled workflow may have committed since
+your last sync — its bot commits land on the same branch.
+
 ## index.md
 
 Root and any subdirectory `index.md` is a content-oriented catalog: one
