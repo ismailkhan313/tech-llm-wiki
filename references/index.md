@@ -50,6 +50,37 @@ for anything not verbatim, the canonical URL in the file header wins.
   the A2A protocol's own introduction, retrieved 2026-09-06. The problems it
   solves, its benefits and design principles, its relationship to MCP and ADK,
   and the request lifecycle. *Verbatim; image and intra-docs links absolutized.*
+- [anthropic-agent-skills-overview.md](anthropic-agent-skills-overview.md) —
+  "Agent Skills," Claude Platform documentation, retrieved 2026-09-07. Why
+  Skills exist, the three levels of progressive disclosure, the architecture,
+  the surfaces they run on, `SKILL.md` structure, security, and platform
+  limits. *Verbatim, from the markdown source the docs site serves at the same
+  path with a `.md` suffix; the docs' own frontmatter replaced by the OKF
+  block.*
+- [anthropic-agent-skills-best-practices.md](anthropic-agent-skills-best-practices.md) —
+  "Skill authoring best practices," Claude Platform documentation, retrieved
+  2026-09-07. Conciseness, degrees of freedom, naming and descriptions,
+  progressive-disclosure patterns, workflows and feedback loops,
+  evaluation-driven development, anti-patterns, and executable-code guidance.
+  *Verbatim, same source form as above.*
+- [claude-code-skills.md](claude-code-skills.md) — "Extend Claude with skills,"
+  Claude Code documentation, retrieved 2026-09-07. Bundled skills, where skills
+  live and how name conflicts resolve, the full frontmatter reference including
+  Claude Code's extensions to the open spec, invocation control, arguments and
+  substitutions, dynamic context injection, forked subagent skills, sharing,
+  and troubleshooting. *Verbatim; the site's "Documentation Index" banner for
+  automated fetchers dropped.*
+- [agentskills-io-specification.md](agentskills-io-specification.md) —
+  "Specification," agentskills.io, retrieved 2026-09-07. The open Agent Skills
+  format: directory layout, the six frontmatter fields and their constraints,
+  the `scripts/`/`references/`/`assets/` conventions, progressive-disclosure
+  budgets, and validation. *Verbatim, banner dropped.*
+- [agentskills-io-best-practices.md](agentskills-io-best-practices.md) — "Best
+  practices for skill creators," agentskills.io, retrieved 2026-09-07.
+  Grounding skills in real expertise, refining with real execution, scoping
+  skills as coherent units, calibrating control to fragility, and the
+  instruction patterns — gotchas, templates, checklists, validation loops,
+  plan-validate-execute. *Verbatim, banner dropped.*
 - [genai-leader-module-1-slides.md](genai-leader-module-1-slides.md) through
   [module-5](genai-leader-module-5-slides.md) — Google Cloud Skills Boost,
   "Generative AI Leader (ILT)" course slide decks. *Agent transcription of
