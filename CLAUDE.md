@@ -20,6 +20,16 @@ conventions on top of them.
 This repo *is* the OKF bundle root. `index.md` and `log.md` at the root
 are reserved (OKF §3.1) — never write a concept with either name.
 
+**"Bundle" means this repo, always — there is exactly one, and it is never
+nested.** A category subdirectory like `Agentic Design Patterns/` is a
+*folder* or *category*, never "the X bundle," even though it carries its own
+`index.md`; only the root declares `okf_version`, which is what makes it the
+bundle root. Reserve the word for places where the OKF structure is actually
+the subject — this file, `open-knowledge-format.md`, `operating-this-wiki.md`.
+In an ordinary cross-reference on a concept page, write "in this wiki"; "in
+this bundle" is correct there but reads as jargon and invites exactly the
+nested-bundle misreading this paragraph exists to prevent.
+
 ## What publishes
 
 The mirror to `ismailkhan.xyz/wiki/` carries the concept pages and `index.md`.
@@ -121,8 +131,8 @@ retrieved: <ISO 8601 datetime>
 
 **Type values** aren't centrally registered (OKF §4.1) — pick what fits.
 Common ones here: `Overview`, `Concept`, `Model`, `Technique`, `Pattern`,
-`Protocol`, `Paper`, `Person`, `Organization`, `Benchmark`, `Comparison`,
-`Synthesis`, `Study Guide`.
+`Practice`, `Protocol`, `Paper`, `Person`, `Organization`, `Benchmark`,
+`Comparison`, `Synthesis`, `Study Guide`.
 
 **Actor convention** (OKF §7):
 - You, confirming something yourself: `human:ismailkhan`
