@@ -81,6 +81,14 @@ for anything not verbatim, the canonical URL in the file header wins.
   skills as coherent units, calibrating control to fragility, and the
   instruction patterns — gotchas, templates, checklists, validation loops,
   plan-validate-execute. *Verbatim, banner dropped.*
+- [anthropic-ai-native-sdlc-playbook.md](anthropic-ai-native-sdlc-playbook.md) —
+  "The AI-Native SDLC Playbook," Claude Academy, retrieved 2026-09-08. All
+  fourteen lesson pages of Anthropic's Applied AI team's course, concatenated in
+  course order under the six stage headings: the case that the bottleneck moved
+  out of the build phase, the twelve plays, and the regulated-enterprise
+  managed-settings configuration. *Verbatim prose; converted from each lesson's
+  server-rendered article element, site chrome and copy buttons dropped,
+  headings demoted one level, the three figures referenced by URL.*
 - [genai-leader-module-1-slides.md](genai-leader-module-1-slides.md) through
   [module-5](genai-leader-module-5-slides.md) — Google Cloud Skills Boost,
   "Generative AI Leader (ILT)" course slide decks. *Agent transcription of
