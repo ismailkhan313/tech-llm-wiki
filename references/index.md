@@ -116,3 +116,21 @@ for anything not verbatim, the canonical URL in the file header wins.
   temporary organisation PMI, MSP and GovS 002 mean by the word. *Excerpt —
   Appendix 7 only. US federal work, not subject to domestic copyright;
   bullet glyphs and apostrophes normalized.*
+- [mcconnell-brooks-law-repealed.md](mcconnell-brooks-law-repealed.md) — Steve
+  McConnell, "Brooks' Law Repealed?", *IEEE Software* 16(6):6–8,
+  November/December 1999. The standing counter-argument: Brooks's Law is largely
+  an artefact of bad estimation and worse tracking, and the point at which
+  adding staff turns counterproductive arrives far later than the law implies.
+  *Excerpt — the load-bearing passages only. Copyright Steve McConnell / IEEE,
+  so quoted rather than mirrored. The original URL now 404s and the live site is
+  behind a bot challenge; the canonical copy is an Internet Archive capture,
+  which is why this excerpt exists.*
+- [farshchi-personnel-factors-delayed-projects.md](farshchi-personnel-factors-delayed-projects.md)
+  — Farshchi, Jusoh & Azmi Murad, "Impact of Personnel Factors on the Recovery
+  of Delayed Software Projects: A System Dynamics Approach," *ComSIS*
+  9(2):627–652, 2012. The one study that treats *who* you add to a late project,
+  rather than how many, as the variable, parameterised by COCOMO II's six
+  personnel factors. *Excerpt — abstract, conclusion and the passages on
+  Stutzke's and Abdel-Hamid's prior models. Open access under CC BY-NC-ND 4.0;
+  equations and figures are graphics in the PDF and did not survive extraction,
+  so the canonical PDF wins.*
