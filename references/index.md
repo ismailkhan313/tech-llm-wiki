@@ -134,3 +134,20 @@ for anything not verbatim, the canonical URL in the file header wins.
   Stutzke's and Abdel-Hamid's prior models. Open access under CC BY-NC-ND 4.0;
   equations and figures are graphics in the PDF and did not survive extraction,
   so the canonical PDF wins.*
+- [anthropic-building-effective-agents.md](anthropic-building-effective-agents.md)
+  — Erik S. and Barry Zhang, "Building effective agents," Engineering at
+  Anthropic, 2024-12-19. The post that fixed the working definitions of agentic
+  system, workflow and agent, set out the five composable workflow patterns,
+  and argued for building neither until a simpler solution fails. *Excerpt — the
+  definitions, the five patterns with their "when to use" guidance, the agents
+  section and the summary in full; both appendices summarized; the eight
+  diagrams not reproduced. Note that the live page now carries a publisher's
+  note that the tooling landscape it describes has changed since 2024.*
+- [hf-virtualoasis-agents-vs-workflows.md](hf-virtualoasis-agents-vs-workflows.md)
+  — VirtualOasis, "Agents vs. Workflows," Hugging Face community article,
+  2025-05-06. A short secondary post whose nine citations are seven blogs, one
+  vendor doc and a diagram tool, and which attributes Anthropic's definition of
+  an agent to LangChain. Kept as a specimen of how the distinction travels, not
+  as an authority on it. *Agent transcription — prose complete; the Mermaid
+  diagram did not survive extraction, and inline link targets are preserved as
+  the trailing citation list.*
