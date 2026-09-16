@@ -1,8 +1,12 @@
 # tech-llm-wiki
 
-A personal, LLM-maintained knowledge base on LLMs and AI more broadly —
-built by ingesting papers, articles, and notes, and letting Claude Code
-keep a wiki of interlinked concept pages current as sources come in.
+A personal, LLM-maintained knowledge base — built by ingesting papers,
+articles, and notes, and letting Claude Code keep a wiki of interlinked
+concept pages current as sources come in.
+
+Three subjects, all first-class: **LLMs and AI**, **technical program
+management**, and **technical product management**. The repo name predates
+the last two.
 
 Two ideas this repo combines:
 

@@ -6,6 +6,29 @@ and structured as an [Open Knowledge Format (OKF) v0.2](https://github.com/Googl
 bundle. Read both if you haven't; this file just pins down the local
 conventions on top of them.
 
+## Scope
+
+Three subject areas, all first-class:
+
+- **LLMs and AI** — the original scope, and still the largest. Models,
+  techniques, protocols, agentic patterns, the practices around them.
+- **Technical program management** — program vs. project vs. portfolio,
+  benefits realisation, governance, delivery standards and the research
+  behind them.
+- **Technical product management** — product strategy, discovery,
+  prioritisation, metrics, the product/engineering interface.
+
+The repo name predates the last two; don't read it as a scope statement. The
+three overlap constantly and pages should cross-link across them rather than
+staying in their lane — a page on delivery metrics has something to say to a
+page on agentic SDLC, and saying so is the point of the wiki.
+
+A source only earns a page if it's a *serious* one: a standard, a peer-reviewed
+paper, a recognized book, primary vendor documentation. The PM literature in
+particular has a large derivative layer — listicles restating standards nobody
+links to — and none of it belongs here. Prefer the normative source over any
+summary of it, and say so on the page when the popular framing diverges.
+
 ## The three layers
 
 - **Raw sources** — `references/`. Immutable. Articles, papers, transcripts,
@@ -132,7 +155,12 @@ retrieved: <ISO 8601 datetime>
 **Type values** aren't centrally registered (OKF §4.1) — pick what fits.
 Common ones here: `Overview`, `Concept`, `Model`, `Technique`, `Pattern`,
 `Practice`, `Protocol`, `Paper`, `Person`, `Organization`, `Benchmark`,
-`Comparison`, `Synthesis`, `Study Guide`.
+`Comparison`, `Synthesis`, `Study Guide`, `Standard`.
+
+Use `Standard` for a page whose subject is one normative document — an ISO
+standard, a PMI or AXELOS standard, a government functional standard. `Paper`
+is for a single piece of research; `Comparison` for a page that exists to hold
+two or more things apart.
 
 **Actor convention** (OKF §7):
 - You, confirming something yourself: `human:ismailkhan`
@@ -204,14 +232,14 @@ After committing here, run all three steps:
 
 ```bash
 # 1. push the wiki
-git -C ~/Codebase/tech-llm-wiki push
+git -C ~/codebase/ismailkhan/tech-llm-wiki push
 
 # 2. mirror into the site's content/Wiki, minus what doesn't publish
 rsync -a --delete \
   --exclude='.git' --exclude='.gitignore' --exclude='.claude' \
   --exclude='CLAUDE.md' --exclude='README.md' --exclude='references' \
   --exclude='log.md' \
-  ~/Codebase/tech-llm-wiki/ ~/Codebase/ismailkhan.xyz/content/Wiki/
+  ~/codebase/ismailkhan/tech-llm-wiki/ ~/codebase/ismailkhan/ismailkhan.xyz/content/Wiki/
 
 #    log.md publishes separately at /log, retitled "Wiki Log"
 awk '
@@ -220,12 +248,12 @@ awk '
   in_fm && /^title:/ { print "title: Wiki Log"; next }
   !in_fm && !h1 && /^# / { print "# Wiki Log"; h1 = 1; next }
   { print }
-' ~/Codebase/tech-llm-wiki/log.md > ~/Codebase/ismailkhan.xyz/content/log.md
+' ~/codebase/ismailkhan/tech-llm-wiki/log.md > ~/codebase/ismailkhan/ismailkhan.xyz/content/log.md
 
 # 3. commit and push the site — deploy.yaml runs on push to main
-git -C ~/Codebase/ismailkhan.xyz add content/Wiki content/log.md
-git -C ~/Codebase/ismailkhan.xyz commit -m "Sync notes from tech-llm-wiki@$(git -C ~/Codebase/tech-llm-wiki rev-parse --short HEAD)"
-git -C ~/Codebase/ismailkhan.xyz push
+git -C ~/codebase/ismailkhan/ismailkhan.xyz add content/Wiki content/log.md
+git -C ~/codebase/ismailkhan/ismailkhan.xyz commit -m "Sync notes from tech-llm-wiki@$(git -C ~/codebase/ismailkhan/tech-llm-wiki rev-parse --short HEAD)"
+git -C ~/codebase/ismailkhan/ismailkhan.xyz push
 ```
 
 Pull the site repo first if the scheduled workflow may have committed since

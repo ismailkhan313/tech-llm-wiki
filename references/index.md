@@ -93,3 +93,26 @@ for anything not verbatim, the canonical URL in the file header wins.
   [module-5](genai-leader-module-5-slides.md) — Google Cloud Skills Boost,
   "Generative AI Leader (ILT)" course slide decks. *Agent transcription of
   the official PDFs.*
+- [govs-002-project-delivery.md](govs-002-project-delivery.md) — *Government
+  Functional Standard GovS 002: Project delivery*, UK Cabinet Office /
+  Infrastructure and Projects Authority, version 2.1 (September 2025).
+  Mandatory across UK government; clause 3.3 defines portfolio, programme,
+  project and work package in one place. *Excerpt — clause 3.3 and the
+  benefits-management clause only, out of a ~60-page standard. Crown
+  copyright under the Open Government Licence v3.0, so reproducible with
+  attribution.*
+- [nasa-npr-7120-5f.md](nasa-npr-7120-5f.md) — NASA NPR 7120.5F, *NASA Space
+  Flight Program and Project Management Requirements*, effective 2021-08-03.
+  Its definitions of program and project, and the four program types
+  (single-project, uncoupled, loosely coupled, tightly coupled) with worked
+  examples. *Excerpt — Appendix A definitions and section 2.1.2 only. US
+  federal work, not subject to domestic copyright. Extracted from the official
+  PDF; subset-font spacing artifacts closed up, which is why it's marked
+  excerpt rather than verbatim.*
+- [omb-m-18-19-pmiaa.md](omb-m-18-19-pmiaa.md) — OMB M-18-19, *Improving the
+  Management of Federal Programs and Projects through Implementing the PMIAA*,
+  June 2018. Kept for Appendix 7, whose federal definition of "program" — a
+  permanent entity defined by statutory authority — is the opposite of the
+  temporary organisation PMI, MSP and GovS 002 mean by the word. *Excerpt —
+  Appendix 7 only. US federal work, not subject to domestic copyright;
+  bullet glyphs and apostrophes normalized.*
