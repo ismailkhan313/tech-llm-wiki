@@ -203,3 +203,23 @@ for anything not verbatim, the canonical URL in the file header wins.
   attributes the principle to Pareto in exactly the way Juran's essay exists to
   correct. Used for mechanics, not provenance. *Excerpt — substantive prose and
   the full FAQ quoted; figures, navigation and consulting CTAs dropped.*
+- [easyvista-project-dependency-mapping.md](easyvista-project-dependency-mapping.md)
+  — EasyVista, "Project Dependency Mapping: A Strategic Pillar for IT Success,"
+  blog, July 2025 (updated 2026). ITSM vendor content with an embedded product
+  pitch; kept for its implementation framework, register fields, escalation
+  thresholds and the vertical/horizontal distinction. Carries three citation
+  problems — a redefinition of "dependency hell," a decade-old Gartner downtime
+  figure presented as current, and a real PMI statistic with an unsupported
+  causal claim bolted on — each annotated in place. *Excerpt — substantive
+  prose and the FAQ quoted; navigation, banners and product placements
+  dropped.*
+- [atlassian-project-dependencies.md](atlassian-project-dependencies.md) —
+  Atlassian, "Project dependencies: Types & ways to manage them effectively,"
+  Agile Coach guide, undated. Correct definitions of the four logical
+  relationship types; its landscaping example states the dependency direction
+  backwards in the paragraph after establishing it, and two more examples
+  illustrate a different relationship than the one they name. Kept for the
+  definitions and the identification prompts, with the errors annotated rather
+  than silently corrected. *Excerpt — article body close to complete;
+  navigation (roughly 90% of the page) and Jira CTAs dropped.*
+
