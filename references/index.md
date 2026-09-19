@@ -151,3 +151,41 @@ for anything not verbatim, the canonical URL in the file header wins.
   as an authority on it. *Agent transcription — prose complete; the Mermaid
   diagram did not survive extraction, and inline link targets are preserved as
   the trailing citation list.*
+- [atlassian-daci-play.md](atlassian-daci-play.md) — Atlassian Team Playbook,
+  "DACI Decision-Making Framework." The closest thing to primary documentation
+  for DACI: the four role definitions, the 15-minute prep / 60-minute run sheet,
+  and the document template. Also the origin of the uncited "McKinsey found 25%"
+  claim, and notably silent on where DACI came from. *Agent transcription — page
+  body complete in original order; site navigation, product marketing and
+  template CTAs dropped. Atlassian revises Playbook pages without changelogs, so
+  treat as a dated snapshot.*
+- [rogers-blenko-who-has-the-d.md](rogers-blenko-who-has-the-d.md) — Paul Rogers
+  & Marcia Blenko, "Who Has the D? How Clear Decision Roles Enhance
+  Organizational Performance," *Harvard Business Review*, January 2006, reprint
+  R0601D. Introduces RAPID and the four decision bottlenecks; the serious
+  statement of the decision-roles idea that RACI and DACI both gesture at.
+  *Excerpt — the definitional and prescriptive passages only, as quotation. HBR
+  is a paid reprint; extracted from the free full text hosted by USC's Center
+  for Effective Organizations.*
+- [mckinsey-limits-of-raci-dare.md](mckinsey-limits-of-raci-dare.md) — Aaron De
+  Smet, Caitlin Hewes & Mengwei Luo, "The limits of RACI—and a better way to
+  make decisions," McKinsey, 2022-07-25. Four pitfalls of RACI and the DARE
+  replacement, ending "don't use RACI." Kept partly because it is what McKinsey
+  *actually* published about this family of frameworks, against which the DACI
+  statistic attributed to them does not survive. *Agent transcription — short
+  post, reproduced in full apart from author bios. mckinsey.com refuses
+  automated requests; recovered from an Internet Archive capture.*
+- [pmcom-daci-model.md](pmcom-daci-model.md) — Marianne Sison, "DACI
+  Decision-Making Framework: Everything You Need to Know,"
+  project-management.com. Kept as a **specimen** of the trade-press layer rather
+  than as an authority: monetised, vendor-placed, unsourced on origin, and
+  internally inconsistent in rendering DACI as a task matrix. Its operational
+  checklists and failure modes are genuinely useful and are what the page draws
+  on. *Excerpt — substantive prose quoted; advertising and affiliate placements
+  stripped.*
+- [pmcom-raci-matrix.md](pmcom-raci-matrix.md) — Marianne Sison, "Understanding
+  the Responsibility Assignment Matrix (RACI Matrix)," project-management.com.
+  Same basis: a specimen, kept for its construction steps, four named
+  practitioner quotes and an unusually honest limitations list. Silent on origin
+  and on PMBOK, ITIL and COBIT. *Excerpt — substantive prose quoted; advertising
+  and affiliate placements stripped.*
