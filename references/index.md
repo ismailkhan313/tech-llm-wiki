@@ -189,3 +189,17 @@ for anything not verbatim, the canonical URL in the file header wins.
   practitioner quotes and an unusually honest limitations list. Silent on origin
   and on PMBOK, ITIL and COBIT. *Excerpt — substantive prose quoted; advertising
   and affiliate placements stripped.*
+- [juran-non-pareto-principle.md](juran-non-pareto-principle.md) — Joseph M.
+  Juran, "The Non-Pareto Principle; Mea Culpa," *Quality Progress* 8(5):8–9,
+  1975 (Juran Institute reprint dated 1974). Juran's public retraction of the
+  name he gave the 80/20 rule: the generalisation was his, not Pareto's, the
+  cumulative curve belongs to Lorenz, and "trivial many" was later corrected to
+  "useful many." *Excerpt — the argument reproduced essentially complete;
+  institute front matter, the marginal takeaways box and the biographical panel
+  dropped, and the General Motors cryptanalysis anecdote condensed.*
+- [kaizen-pareto-chart.md](kaizen-pareto-chart.md) — Kaizen Institute, "Pareto
+  Chart: Focusing Improvement Efforts Where They Matter." Competent on chart
+  anatomy, construction, update cadence and limitations; cites nothing, and
+  attributes the principle to Pareto in exactly the way Juran's essay exists to
+  correct. Used for mechanics, not provenance. *Excerpt — substantive prose and
+  the full FAQ quoted; figures, navigation and consulting CTAs dropped.*
