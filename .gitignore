@@ -3,3 +3,6 @@
 # excalidraw-diagram skill renderer (local Python env)
 .claude/skills/excalidraw-diagram/references/.venv/
 .claude/skills/excalidraw-diagram/references/__pycache__/
+
+# Obsidian app settings and workspace state (local only)
+.obsidian/
